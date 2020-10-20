@@ -1,5 +1,7 @@
 # ICON SYSTEM
 
+![Test suites](https://github.com/mcaleb808/icon-system/workflows/Test%20suites/badge.svg)
+
 ## Available Scripts
 
 In the project directory, you can run:
