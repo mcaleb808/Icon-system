@@ -13,14 +13,9 @@ function App() {
       parse(res.data).then((json) => {
         setText(JSON.stringify(json, null, 2));
         const mysvg = stringify(json);
-        console.log(mysvg);
       }),
     );
   }, []);
-
-  console.log(text);
-
-  console.log(logo);
 
   return (
     <div className="App">
