@@ -27,13 +27,12 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "axios": "^0.20.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-scripts": "3.4.3",
-    "react-test-renderer": "^16.14.0",
-    "svgson": "^4.1.0"
+    "react-svgmt": "^1.1.11",
+    "react-test-renderer": "^16.14.0"
   }
 }
