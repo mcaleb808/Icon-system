@@ -1,40 +1,37 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import iconPath from '../dummyData';
+import { SvgLoader } from 'react-svgmt';
 
-const defaultStyles = { display: 'inline-block', verticalAlign: 'middle' };
+const defaultStyles = { marginLeft: 30 };
 
-const Icon = ({ size, color, icon, className, style, viewBox }) => {
+const Icon = ({ color, icon, className, style, size }) => {
   const styles = { ...defaultStyles, ...style };
   return (
-    <svg
+    <SvgLoader
+      width={size}
+      height={size}
+      path={icon}
+      fill={color}
       className={className}
       style={styles}
-      viewBox={viewBox}
-      width={`${size}px`}
-      height={`${size}px`}
-      xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink">
-      <path fill={color} d={iconPath[icon]} />
-    </svg>
+    />
   );
 };
 
 Icon.defaultProps = {
-  size: 24,
   color: '#000000',
-  viewBox: '0 0 24 24',
+  size: 25,
+  width: 25,
   style: {},
   className: '',
 };
 
 Icon.propTypes = {
-  size: PropTypes.number.isRequired,
-  color: PropTypes.string.isRequired,
+  color: PropTypes.string,
   icon: PropTypes.string.isRequired,
-  viewBox: PropTypes.string.isRequired,
   style: PropTypes.any,
   className: PropTypes.string,
+  size: PropTypes.number,
 };
 
 export default Icon;
